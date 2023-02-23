@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+@import './header.css';
+@import './main.css';
+@import './footer.css';
+ 
+:root{
+    --soft-red:hsl(7, 99%, 70%);
+    --yellow:hsl(51, 100%, 49%);
+    --dark-desaturated-cyan:hsl(167, 40%, 24%);
+    --dark-blue:hsl(198, 62%, 26%);
+    --dark-moderate-cyan:hsl(168, 34%, 41%);
+    --very-dark-desaturaed-blue:hsl(212, 27%, 19%);
+    --very-dark-grayish-blue:hsl(213, 9%, 39%);
+    --dark-grayish-blue:hsl(232, 10%, 55%);
+}
+
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+}
+header ,
+main,
+footer{
+   min-width: 300px;
+    max-width: 1440px;
+    margin-inline: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+/* typogragphy */
+h1, 
+h2,
+h3,
+h4,
+.btn{
+    font-family: 'Fraunces', serif;
+}
+
+h1{
+    font-size: 1.9rem;
+}
+h2{
+    font-size: 1.8rem;
+ 
+}
+h3{
+    font-size: 1.5rem;
+ 
+}
+h4{
+    font-size: 1.2rem;
+
+}
+p,
+.nav-item{
+    color: var(--dark-grayish-blue);
+    
+}
+
+
+button{
+    border:  none;
+    background: transparent;
+
+}
+
+@media(min-width:600px){
+    h1{
+        font-size: 2.3rem;
+    }
+}
+@media(min-width:600px){
+     .section-content{
+        text-align: left;
+     }
+}
+
+@media(min-width:1100px){
+    h1{
+        font-size: 2.8rem;
+    }
+ 
+}

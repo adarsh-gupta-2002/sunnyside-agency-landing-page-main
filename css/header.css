@@ -1,0 +1,170 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
+}
+
+.header{
+    background: url('../images/mobile/image-header.jpg');
+    background-position: bottom ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 550px;
+    text-align: center;
+}
+ 
+
+h1{ 
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 3px; 
+}
+.container{
+    padding: 2rem 1.5rem;
+}
+
+.arrow{ 
+    width:1.6rem;
+}
+
+
+.header-content{
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    transform: translateY(57%);
+}
+ 
+
+.nav-item-container{
+    background-color: #fff; 
+    margin-top: 2rem;
+    padding-block: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    position: relative;
+
+}
+
+.nav-item-container:after{
+    content: '';
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background: #fff;
+    display: inline-block;
+    height: 26px;
+    width: 25px;
+    position: absolute;
+    top: -10%;
+    right: 0; 
+}
+
+.nav a:hover{
+    color: #000;
+}
+
+/* nav links */
+.contact { 
+    margin-block: 1em;
+}
+.contact a{
+    background: hsl(51, 100%, 49%);
+    color: hsl(212, 27%, 19%); 
+    padding: 0.8em 1.6em;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-size: 0.8rem;
+}
+
+.contact a:hover{ 
+    background: rgb(149, 225, 255);
+    color: #fff; 
+}
+
+
+.nav-values{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+
+.show{
+    display: none;
+}
+
+ 
+
+@media(min-width:600px){
+    .nav{ 
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-item-container{
+        background: unset;
+        margin: unset;
+        flex-direction: row;
+        padding: unset;
+        gap: 2.5em;
+
+    }
+    .menu-btn{
+        display: none;
+    }
+    .nav-item-container::after{
+        display: none;
+    }
+    .nav .contact a{
+        background: #fff;
+        color: hsl(212, 27%, 19%);
+
+    }
+    .contact a:hover{
+        
+        background: rgb(149, 225, 255);
+        color: #fff; 
+    }
+      
+    .nav .nav-item{
+        color: #fff;
+    }
+}
+
+
+ 
+
+@media(min-width:500px){
+    .header{
+        background: url('../images/desktop/image-header.jpg');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+    .header-content{
+        transform: translateY(46%);
+    }
+}
+
+@media(min-width:1100px){
+
+
+    .header{
+        min-height: 700px;
+    }
+
+    .arrow{
+        width: 2rem;
+    }
+
+    .sunyside-logo{
+        width: 180px;
+    }
+
+}
