@@ -292,6 +292,16 @@
 }
 
 
+@media(min-width:1000px){
+    .content{
+        width: 50%;
+    }
+    .section-content{
+        padding-inline: 130px;
+    }
+}
+
+
 
 
 
